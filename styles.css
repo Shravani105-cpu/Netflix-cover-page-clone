@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/3e7a5a83-48e7-41ec-bbbf-9cde5d054f4f/fb9079a9-073f-49e8-bd94-e3d67cf24859/IN-en-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg') center center/cover no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+}
+
+.lang-btn,
+.signin-btn {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lang-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.signin-btn {
+    background: #e50914;
+    color: white;
+    border-radius: 3px;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.email-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.email-signup input {
+    padding: 15px;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.email-signup button {
+    padding: 15px 25px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.trending {
+    padding: 20px;
+}
+
+.trend-box {
+    width: 180px;
+    height: 270px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+/* Scroll container remains same */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+/* Add images via CSS background */
+.img1 {
+    background-image: url('https://occ-0-2087-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABV5rwf2fuYX2i-sYcG48oLpkL_dI0wXwdPApVds-33GmNPAx5AY1hwmOBuEzvSw4lP2jJt4gai_uX7vG87sq-4P-7zmtxCMw290.jpg?r=cc2&quot;');
+}
+
+.img2 {
+    background-image: url('https://occ-0-2087-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABcRi-Vz9VpMGeZVjIKsyu5BHicUbS6upq4Lg9S2m_61phaK25Vw3QlPPhkVByhZRqMMFB8X1tIkwlxE1x2byy0L7F1LLLVZNEGU.jpg?r=cff&quot;');
+}
+
+.img3 {
+    background-image: url('https://occ-0-2087-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTixI7Cz0HVkuB1KQvyT9xedX83h2ob_PwNRW74psOcCGFKugKnc9ErhsaNh6JyyjGFS7ZLrxafx7yAkgdqlsT2kP9b0oGHIRnY.jpg?r=a92&quot;');
+}
+
+.img4 {
+    background-image: url('https://occ-0-2087-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABStQ6HgKO3rG1Vn5ZcTn93rJ7Q7u2YfqhQp_8zE61ENB0wduAjSgYlPEVl74putNrUTl-lacO3IaLdo3Hy-vN2aPThtPuX4vLJ0.jpg?r=133&quot;');
+}
+
+.img5 {
+    background-image: url('https://occ-0-2087-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTRlnF7yZC07Uvh18D6zrY7KOEr2VQe0quKx24J9OgMXb1r0zrugw0qctMIDaA1pN5twuJMSpM2L0_eybZN-J77XbRpxUdlxZSg.jpg?r=f8a&quot;');
+}
+
+.img6 {
+    background-image: url('https://occ-0-2087-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWAKyKvJyDn4wfHuReuOlZVtAWrvnNWN2G0Xknt86NQviATE2fh026dy-jJVn6oRtTF7vmNztGRGBt5rByYale5EIt9uXTT_7pY.jpg?r=d56&quot;');
+}
+
+.img7 {
+    background-image: url('https://occ-0-2087-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUtWA7cf6q8Y38W9LNJxpPMa3wh4g5OQUmDnyq3fd9jPjjDp8p5_-r9wAuBfTQ7C_a41AFdfB3Zp3Htlp2FWcpR6brnczFxrIAASGL5t7A7MprDdyPa6S9_mBGErN7NbitbG.jpg?r=4c4&quot;');
+}
+
+.img8 {
+    background-image: url('https://occ-0-2087-2186.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABSxIWJsnqugk33nHAzNMuZMbbf2KksWfacGBGh1VbAgYPouOza3576MygGM2AW-0ohFolHY061PNSGXZgSAuo1Eolu9ZZGP_-K8.jpg?r=64c&quot;;');
+}
+
+
+.reasons {
+    padding: 20px;
+    background: #111;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.faq {
+    padding: 30px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-btn {
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 15px;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    background: #444;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer {
+    padding: 20px;
+    background: #141414;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+}
+
